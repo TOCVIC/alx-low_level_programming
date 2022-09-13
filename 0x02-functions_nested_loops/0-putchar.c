@@ -9,16 +9,15 @@
 
 int _putchar(void);
 {
-	int i = 0;
-	char c;
-	char s[] = "Putchar\n";
 
-	while (i <= 8)
+	char c[] = "_putchar";
+	int i;
+
+	for (i = 0; i < 8; i++)
 	{
-		c = s[i];
-		_putchar(c);
-		i++;
-	}
 
+		_putchar(c[i]);
+	}
+	_putchar('\n');
 	return (0);
 }

@@ -7,13 +7,13 @@
  * Return: always 0
  */
 
-void main(void)
+int _putchar(void);
 {
 	int i = 0;
 	char c;
 	char s[] = "Putchar\n";
 
-	while (i <= 9)
+	while (i <= 8)
 	{
 		c = s[i];
 		_putchar(c);

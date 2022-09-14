@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
- * main - prints putchar
- *
- * Description: prints _putchar
- *
- * Return: 0 (Success)
- */
+* main - prints Putchar
+*
+* Description: prints _putchar
+*
+* Return: 0 (Success)
+*/
+
 int main(void)
 {
-	_putchar('-');
+	_putchar('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');

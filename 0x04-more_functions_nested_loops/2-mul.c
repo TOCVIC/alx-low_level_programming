@@ -4,14 +4,12 @@
  * @a: multiplying
  * @b: multiplier
  *
- * Return: 0
+ * Return: the result of the multiplication
  */
 int mul(int a, int b)
 {
-	int a;
-	int b;
-	{
-		printf("%d", a * b);
-	}
-	return (0)
+	int result;
+
+	result = a * b;
+	return (result);
 }

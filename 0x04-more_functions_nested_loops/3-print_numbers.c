@@ -6,9 +6,9 @@
  */
 void print_numbers(void)
 {
-	int ch;
+	int num;
 
-	for (ch >= 48 ;  ch <= 57 ;  ch++)
+	for (num >= 48 ;  num <= 57 ;  num++)
 	{
 		_putchar(ch);
 	}

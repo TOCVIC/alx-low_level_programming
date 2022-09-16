@@ -1,15 +1,13 @@
-#include "main.h"
-
+#include "main.h"
 /**
- * is upper checks for the uppercase character
- * @c: the character to print
+ * _isupper - checks for uppercase character
+ * @c: prints uppercase charater
  *
- * Return: 1 or 0
+ * Return: 0 or 1
  */
-int _isupper(int c)
+int _isupper(int c)
 {
-	if ((c = 65) && (c <= 90))
-
+	if ((c >= 65) && (c <= 90))
 	{
 		return (1);
 	}
@@ -18,3 +16,4 @@ int _isupper(int c)
 		return (0);
 	}
 }
+

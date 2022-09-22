@@ -12,7 +12,7 @@
 char *_strcat(char *dest, char *src)
 {
 	char destination(98) = "Hello ";
-	char source(1024) = "World! ";
+	char source(1024) = "World!\n";
 
 	printf("concatenated string: %s\n", strcat(destination, source));
 

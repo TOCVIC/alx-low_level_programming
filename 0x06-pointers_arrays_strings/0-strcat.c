@@ -11,13 +11,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *ptr;
+	int count = 0, count2 = 0;
 
-	ptr = _strcat(s1, s2);
+	while (*(dest + count) != '\0')
+	{
+		count++;
+	}
 
-	printf("%s", ptr);
-
-	return (0);
+	while (count2 >= 0)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
+	return (dest);
 }

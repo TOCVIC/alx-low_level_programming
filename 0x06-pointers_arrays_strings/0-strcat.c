@@ -11,8 +11,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char destination(void) = "Hello ";
-	char source(void) = "World! ";
+	char destination(98) = "Hello ";
+	char source(1024) = "World! ";
 
 	printf("concatenated string: %s\n", strcat(destination, source));
 

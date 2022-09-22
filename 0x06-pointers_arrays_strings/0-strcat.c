@@ -11,10 +11,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char destination(98) = "Hello ";
-	char source(1024) = "World!\n";
+	char s1[98] = "Hello ";
+	char s2[] = "World!\n";
+	char *ptr;
 
-	printf("concatenated string: %s\n", strcat(destination, source));
+	ptr = _strcat(s1, s2);
+
+	printf("%s", ptr);
 
 	return (0);
 }

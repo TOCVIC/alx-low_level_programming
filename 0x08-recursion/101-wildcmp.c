@@ -1,29 +1,30 @@
 #include "main.h"
 
 /**
-* is_prime - this function checks if a number is prime or not
-* @n: number to check
-* @y: a buffer
-* Return: 1 if true, 0 otherwise
+* wildcmp - Compare strings
+* @s1: pointer to string params
+* @s2: pointer to string params
+* Return: 0
 */
-int is_prime(int n, int y)
+
+int wildcmp(char *s1, char *s2)
 {
-if (n == 1)
-return (0);
-else if (n % y == 0 && y != n && y != 1)
-return (0);
-else if (n % y == 0 && y == n)
-return (1);
-else
-return (is_prime(n, y + 1));
+if (*s1 == '\0')
+{
+if (*s2 != '\0' && *s2 == '*')
+{
+return (wildcmp(s1, s2 + 1));
+}
+return (*s2 == '\0');
 }
 
-/**
-* is_prime_number - Returns whether prime or not to main
-* @n: number to check
-* Return: 1 if prime, 0 if not
-*/
-int is_prime_number(int n)
+if (*s2 == '*')
 {
-return (is_prime(n, 1));
+return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
+}
+else if (*s1 == *s2)
+{
+return (wildcmp(s1 + 1, s2 + 1));
+}
+return (0);
 }

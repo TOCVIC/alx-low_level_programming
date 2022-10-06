@@ -45,7 +45,7 @@ return (ptr);
 int _strlen(char *s)
 {
 	char *p = s;
-	
+
 	while (*s)
 		s++;
 	return (s - p);

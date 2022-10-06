@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 int find_len(char *str);
@@ -15,7 +15,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len);
 int find_len(char *str)
 {
 	int len = 0;
-	
+
 	while (*str++)
 		len++;
 	return (len);
@@ -33,7 +33,7 @@ char *create_xarray(int size)
 {
 	char *array;
 	int index;
-	
+
 	array = malloc(sizeof(char) * size);
 	if (array == NULL)
 		exit(98);
@@ -66,7 +66,7 @@ char *iterate_zeroes(char *str)
 int get_digit(char c)
 {
 	int digit = c - '0';
-	
+
 	if (digit < 0 || digit > 9)
 	{
 		printf("Error\n");
@@ -125,7 +125,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
 	int num, tens = 0;
-	
+
 	while (*(final_prod + 1))
 		final_prod++;
 	while (*(next_prod + 1))

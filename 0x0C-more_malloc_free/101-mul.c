@@ -7,7 +7,7 @@ char *iterate_zeroes(char *str);
 int get_digit(char c);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]);
 /**
  * find_len - Finds the length of a string.
  * @str: The string to be measured.
